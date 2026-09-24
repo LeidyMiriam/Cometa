@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" style="-fx-background-color: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 15; -fx-background-color: #1f0f14;">
+            <Label style="-fx-text-fill: #ff3366; -fx-font-size: 20px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="botonDesarrolladores" onAction="#onBotonDesarrolladoresAction" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-background-radius: 8;" text="Desarrolladores" />
+         <Button fx:id="botonFiltros" onAction="#onBotonFiltrosAction" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-background-radius: 8;" text="Filtros" />
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <VBox alignment="BOTTOM_LEFT" maxWidth="330" prefHeight="380" prefWidth="330" style="-fx-background-color: #1f0f14; -fx-padding: 20; -fx-background-radius: 15;">
+                <Label style="-fx-text-fill: #8c6875;" text="Area de Foto" />
+                <Label style="-fx-text-fill: #ffffff; -fx-font-size: 22px; -fx-font-weight: bold;" text="Nombre, Edad" />
+                <Label style="-fx-text-fill: #fcd5ce;" text="Descripcion breve del usuario..." />
+            </VBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="botonNoup" onAction="#onBotonNoupAction" style="-fx-background-color: #1f0f14; -fx-text-fill: #b82355; -fx-border-color: #b82355; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 8 16;" text="No gracias" />
+                <Button fx:id="botonSuperLike" onAction="#onBotonSuperLikeAction" style="-fx-background-color: #1f0f14; -fx-text-fill: #ff3366; -fx-border-color: #ff3366; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 8 16;" text="Superlike" />
+                <Button fx:id="botonLike" onAction="#onBotonLikeAction" style="-fx-background-color: #1f0f14; -fx-text-fill: #b82355; -fx-border-color: #b82355; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 8 16;" text="Like" />
+                <Button fx:id="botonEnviaMensaje" onAction="#onBotonEnviaMensajeAction" style="-fx-background-color: #1f0f14; -fx-text-fill: #ff3366; -fx-border-color: #ff3366; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 8 16;" text="Mensaje" />
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 12; -fx-background-color: #1f0f14;">
+            <Button fx:id="botonALikesPr" onAction="#onBotonALikesPrAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Likes" />
+            <Button fx:id="botonAMensajesPr" onAction="#onBotonAMensajesPrAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Mensajes" />
+            <Button fx:id="botonAPerfilPr" onAction="#onBotonAPerfilPrAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Perfil" />
+            <Button fx:id="botonAConfiguracionPr" onAction="#onBotonAConfiguracionPrAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Configuración" />
+        </HBox>
+    </bottom>
+</BorderPane>
