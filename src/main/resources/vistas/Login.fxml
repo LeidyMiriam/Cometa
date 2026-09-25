@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" spacing="15.0" style="-fx-background-color: #12080a; -fx-padding: 25;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="PaqueteLibrerias.LoginController">
+    <Label style="-fx-text-fill: #ff3366; -fx-font-size: 30px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+    <Label style="-fx-text-fill: #fcd5ce; -fx-font-size: 20px;" text="Iniciar Sesion" />
+    <VBox maxWidth="300" spacing="10" style="-fx-background-color: #1f0f14; -fx-padding: 20; -fx-background-radius: 10;">
+        <Label style="-fx-text-fill: #fcd5ce;" text="Correo" />
+        <TextField fx:id="cuadroCorreoSI" promptText="correo" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875;" />
+        <Label style="-fx-text-fill: #fcd5ce;" text="Contraseña" />
+        <PasswordField fx:id="cuadroContrasenaIS" promptText="contraseña" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875;" />
+        <Button fx:id="botonAPrincipal" maxWidth="Infinity" onAction="#onBotonAPrincipal" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="Ingresar" />
+    </VBox>
+    <Button fx:id="botonGmail" onAction="#onBotonGemailAction" prefWidth="250" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff;" text="Ingresar con Gmail" />
+    <Button fx:id="botonFacebook" onAction="#onBotonFacebookAction" prefWidth="250" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff;" text="Ingresar con Facebook" />
+    <Button fx:id="botonInsta" onAction="#onBotonInstaAction" prefWidth="250" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff;" text="Ingresar con Instagram" />
+</VBox>
