@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" spacing="15.0" style="-fx-background-color: #12080a; -fx-padding: 25;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.RegistroController">
+   <children>
+      <Label style="-fx-text-fill: #ff3366; -fx-font-size: 30px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+      <Label style="-fx-text-fill: #fcd5ce; -fx-font-size: 20px;" text="Algo mas personal" />
+      <VBox maxWidth="300" spacing="10" style="-fx-background-color: #1f0f14; -fx-padding: 20; -fx-background-radius: 10;">
+         <children>
+            <VBox spacing="6">
+               <children>
+                  <Label style="-fx-text-fill: #fcd5ce;" text="Fecha de nacimiento" />
+                  <DatePicker />
+               </children>
+            </VBox>
+            <Label style="-fx-text-fill: #fcd5ce;" text="Genero?" />
+            <VBox spacing="8">
+               <children>
+                  <HBox spacing="15">
+                     <children>
+                        <RadioButton selected="true" style="-fx-text-fill: #fcd5ce;" text="Masculino">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="grupoGenero" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton style="-fx-text-fill: #fcd5ce;" text="Femenino" toggleGroup="$grupoGenero" />
+                        <RadioButton style="-fx-text-fill: #fcd5ce;" text="Otro" toggleGroup="$grupoGenero" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="cuadroSoyOtroGenero" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" />
+               </children>
+            </VBox>
+            <Label style="-fx-text-fill: #fcd5ce;" text="Donde te encuentras" />
+            <TextField fx:id="cuadroSoyOtroGenero1" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" text="Pais" />
+            <TextField fx:id="cuadroSoyOtroGenero11" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" text="Ciudad" />
+            <TextField fx:id="cuadroSoyOtroGenero12" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" text="Municipio" />
+            <TextField fx:id="cuadroSoyOtroGenero111" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" text="Direccion" />
+            <TextField fx:id="cuadroSoyOtroGenero1111" promptText="Especificar otro género" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" text="Codigo postal" />
+            <Button fx:id="botonRegistro" maxWidth="Infinity" onAction="#onBotonRegistro" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Siguiente" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

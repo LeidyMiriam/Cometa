@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
@@ -15,8 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<ScrollPane fitToWidth="true" minHeight="700" minWidth="400.0" prefHeight="750" prefWidth="400.0" style="-fx-background-color: #12080a; -fx-background: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="PaqueteLibrerias.ConfPerfilController">
+<ScrollPane fitToWidth="true" minHeight="700" minWidth="400.0" prefHeight="750" prefWidth="400.0" style="-fx-background-color: #12080a; -fx-background: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.ConfPerfilController">
     <VBox alignment="TOP_CENTER" spacing="20" style="-fx-padding: 25; -fx-background-color: #12080a;">
         
         <HBox alignment="CENTER" spacing="10">
@@ -54,7 +54,7 @@
 
             <VBox spacing="6">
                 <Label style="-fx-text-fill: #fcd5ce;" text="Edad" />
-                <Slider majorTickUnit="20" max="99" min="18" showTickLabels="true" showTickMarks="true" value="20" />
+            <DatePicker />
             </VBox>
 
             <VBox spacing="6">
