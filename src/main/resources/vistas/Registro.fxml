@@ -18,7 +18,7 @@
         <Label style="-fx-text-fill: #fcd5ce;" text="Confirmar Contraseña" />
         <PasswordField fx:id="cuadroContrasena2" promptText="contraseña" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" />
         <CheckBox style="-fx-text-fill: #fcd5ce;" text="Acepto el aviso de privacidad" wrapText="true" />
-        <Button fx:id="botonRegistro" maxWidth="Infinity" onAction="#onBotonRegistro" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Siguiente" />
+        <Button fx:id="botonSiguiente" maxWidth="Infinity" onAction="#onBotonSiguienteAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Siguiente" />
     </VBox>
     <Button fx:id="botonInicioSesion" onAction="#onBotonInicioSesion" style="-fx-background-color: transparent; -fx-text-fill: #b82355;" text="¿Ya tienes cuenta? Inicia sesión" />
 </VBox>

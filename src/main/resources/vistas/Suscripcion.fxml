@@ -34,7 +34,7 @@
     </center>
     <bottom>
         <HBox alignment="CENTER" style="-fx-padding: 15;">
-            <Button fx:id="botonSalirSuscripcion" onAction="#onBotonSalirSuscripcion" style="-fx-background-color: transparent; -fx-text-fill: #b82355;" text="Regresar a Configuración" />
+            <Button fx:id="botonSalirSuscripcion" onAction="#onBotonSalirSuscripcion" style="-fx-background-color: transparent; -fx-text-fill: #b82355;" text="Regresar a Principal" />
         </HBox>
     </bottom>
 </BorderPane>

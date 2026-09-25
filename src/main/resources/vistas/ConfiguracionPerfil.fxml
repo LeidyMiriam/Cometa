@@ -24,6 +24,7 @@
         </HBox>
 
         <VBox maxWidth="380" spacing="16" style="-fx-background-color: #1f0f14; -fx-padding: 25; -fx-background-radius: 15;">
+         <Button fx:id="botonAPrincipal" maxWidth="Infinity" onAction="#onBotonAPrincipalAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10; -fx-background-radius: 8;" text="Regresar a pagina Principal" />
             
             <Label style="-fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-font-weight: bold;" text="Configuración de Perfil" />
             

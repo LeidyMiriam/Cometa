@@ -1,29 +1,42 @@
 package PaqueteLibrerias;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class ConfiguracionController {
 
     @FXML
-    private ComboBox<String> comboBoxIdioma;
+    private Button botonAConfiguracionCo;
 
     @FXML
-    private void initialize() {
-        comboBoxIdioma.getItems().addAll(
-                "Español",
-                "Inglés",
-                "Francés"
-        );
-    }
+    private Button botonALikesCo;
+
+    @FXML
+    private Button botonAMensajesCo;
+
+    @FXML
+    private Button botonAPerfilCo;
+
+    @FXML
+    private Button botonAPrincipalCo;
+
+    @FXML
+    private Button botonConfiguracion;
+
+    @FXML
+    private Button botonSuscripcion;
+
+    @FXML
+    private ComboBox<?> comboBoxIdioma;
 
     @FXML
     private void cambiarVista(ActionEvent event, String ruta) throws IOException {
@@ -43,34 +56,38 @@ public class ConfiguracionController {
     }
 
     @FXML
-    private void onBotonAConfiguracionPerfilAction(ActionEvent event) throws  IOException {
+    void onBotonAConfiguracionCoAction(ActionEvent event) {
+        // Ya estamos en Configuracion, no se navega a ningún lado
+    }
+
+    @FXML
+    void onBotonAConfiguracionPerfilAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/ConfiguracionPerfil.fxml");
     }
 
     @FXML
-    private void onBotonSuscripcionAction(ActionEvent event) throws IOException {
-        cambiarVista(event, "/vistas/Suscripcion.fxml");
-    }
-
-    //Botones de la Parte de abajo para todas las vistas
-
-    @FXML
-    private void onBotonALikesCoAction(ActionEvent event) throws IOException {
+    void onBotonALikesCoAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Likes.fxml");
     }
 
     @FXML
-    private void onBotonAMensajesCoAction(ActionEvent event) throws IOException {
+    void onBotonAMensajesCoAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Mensajes.fxml");
     }
 
     @FXML
-    private void onBotonAPerfilCoAction(ActionEvent event) throws IOException {
+    void onBotonAPerfilCoAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Perfil.fxml");
     }
 
     @FXML
-    private void onBotonAConfiguracionCoAction(ActionEvent event) throws IOException {
-
+    void onBotonAPrincipalCoAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Principal.fxml");
     }
+
+    @FXML
+    void onBotonSuscripcionAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Suscripcion.fxml");
+    }
+
 }

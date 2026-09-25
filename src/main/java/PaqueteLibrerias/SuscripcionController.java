@@ -41,7 +41,7 @@ public class SuscripcionController {
 
     @FXML
     private void onBotonSalirSuscripcion(ActionEvent event) throws  IOException {
-        cambiarVista(event, "/vistas/Configuracion.fxml");
+        cambiarVista(event, "/vistas/Principal.fxml");
     }
 
 }

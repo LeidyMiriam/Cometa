@@ -30,8 +30,8 @@ public class RegistroController {
     }
 
     @FXML
-    private void onBotonRegistro(ActionEvent event) throws  IOException {
-        cambiarVista(event, "/vistas/Principal.fxml");
+    private void onBotonSiguienteAction(ActionEvent event) throws  IOException {
+        cambiarVista(event, "/vistas/Registro2.fxml");
     }
 
     @FXML

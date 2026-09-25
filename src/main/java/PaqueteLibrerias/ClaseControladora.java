@@ -39,7 +39,7 @@ public class ClaseControladora {
     private Button botonInicioSesion;
 
     @FXML
-    private Button botonRegistro;
+    private Button botonSiguiente;
 
     @FXML
     private PasswordField cuadroContrasena;
@@ -56,7 +56,7 @@ public class ClaseControladora {
     }
 
     @FXML
-    void onBotonRegistro(ActionEvent event) {
+    void onBotonSiguienteAction(ActionEvent event) {
 
     }
 

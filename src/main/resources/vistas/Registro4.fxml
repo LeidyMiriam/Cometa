@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" spacing="15.0" style="-fx-background-color: #12080a; -fx-padding: 25;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.RegistroController">
+<VBox alignment="CENTER" minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" spacing="15.0" style="-fx-background-color: #12080a; -fx-padding: 25;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.Registro4Controller">
    <children>
       <Label style="-fx-text-fill: #ff3366; -fx-font-size: 30px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
       <Label style="-fx-text-fill: #fcd5ce; -fx-font-size: 20px;" text="Que buscas" />

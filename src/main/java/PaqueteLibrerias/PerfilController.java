@@ -1,16 +1,35 @@
 package PaqueteLibrerias;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class PerfilController {
+
+    @FXML
+    private Button botonAConfiguracionPe;
+
+    @FXML
+    private Button botonALikesPe;
+
+    @FXML
+    private Button botonAMensajesPe;
+
+    @FXML
+    private Button botonAPerfilPe;
+
+    @FXML
+    private Button botonAPrincipalPe;
+
+    @FXML
+    private Button botonConfiguraPerfil;
 
     @FXML
     private void cambiarVista(ActionEvent event, String ruta) throws IOException {
@@ -30,30 +49,31 @@ public class PerfilController {
     }
 
     @FXML
-    private void onBotonConfiguraPe(ActionEvent event) throws  IOException {
-        cambiarVista(event, "/vistas/ConfiguracionPerfil.fxml");
+    void onBotonAConfiguracionPeAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Configuracion.fxml");
     }
 
-    //Botones de la Parte de abajo para todas las vistas
-
     @FXML
-    private void onBotonALikesPeAction(ActionEvent event) throws IOException {
+    void onBotonALikesPeAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Likes.fxml");
     }
 
     @FXML
-    private void onBotonAMensajesPeAction(ActionEvent event) throws IOException {
+    void onBotonAMensajesPeAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Mensajes.fxml");
     }
 
     @FXML
-    private void onBotonAPerfilPeAction(ActionEvent event) throws IOException {
-
+    void onBotonAPerfilPeAction(ActionEvent event) {
+        // Ya estamos en Perfil, no se navega a ningún lado
     }
 
     @FXML
-    private void onBotonAConfiguracionPeAction(ActionEvent event) throws IOException {
-        cambiarVista(event, "/vistas/Configuracion.fxml");
+    void onBotonAPrincipalPeAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Principal.fxml");
     }
 
+    public void onBotonConfiguraPe(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/ConfiguracionPerfil.fxml");
+    }
 }

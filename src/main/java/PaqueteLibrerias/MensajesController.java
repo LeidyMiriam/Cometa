@@ -6,12 +6,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MensajesController {
 
+    @FXML
+    private HBox hboxAceptarRechazar;
 
     @FXML
     private void cambiarVista(ActionEvent event, String ruta) throws IOException {
@@ -52,4 +55,18 @@ public class MensajesController {
         cambiarVista(event, "/vistas/Configuracion.fxml");
     }
 
+    @FXML
+    private void onBotonRechazoAction(ActionEvent event) {
+        hboxAceptarRechazar.setVisible(false);
+        hboxAceptarRechazar.setManaged(false);
+    }
+
+    @FXML
+    private void onBotonAceptoAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Principal.fxml");
+    }
+
+    public void onBotonAPrincipalMnAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Principal.fxml");
+    }
 }

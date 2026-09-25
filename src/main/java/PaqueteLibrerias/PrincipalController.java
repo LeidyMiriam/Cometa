@@ -1,16 +1,50 @@
 package PaqueteLibrerias;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class PrincipalController {
+
+    @FXML
+    private Button botonAConfiguracionPr;
+
+    @FXML
+    private Button botonALikesPr;
+
+    @FXML
+    private Button botonAMensajesPr;
+
+    @FXML
+    private Button botonAPerfilPr;
+
+    @FXML
+    private Button botonAPrincipalPr;
+
+    @FXML
+    private Button botonDesarrolladores;
+
+    @FXML
+    private Button botonEnviaMensaje;
+
+    @FXML
+    private Button botonFiltros;
+
+    @FXML
+    private Button botonLike;
+
+    @FXML
+    private Button botonNoup;
+
+    @FXML
+    private Button botonSuperLike;
 
     @FXML
     private void cambiarVista(ActionEvent event, String ruta) throws IOException {
@@ -30,30 +64,58 @@ public class PrincipalController {
     }
 
     @FXML
-    private void onBotonDesarrolladoresAction(ActionEvent event) throws  IOException {
-        cambiarVista(event, "/vistas/Integrantes.fxml");
+    void onBotonAConfiguracionPrAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Configuracion.fxml");
     }
 
-    //Botones de la Parte de abajo para todas las vistas
-
     @FXML
-    private void onBotonALikesPrAction(ActionEvent event) throws IOException {
+    void onBotonALikesPrAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Likes.fxml");
     }
 
     @FXML
-    private void onBotonAMensajesPrAction(ActionEvent event) throws IOException {
+    void onBotonAMensajesPrAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Mensajes.fxml");
     }
 
     @FXML
-    private void onBotonAPerfilPrAction(ActionEvent event) throws IOException {
+    void onBotonAPerfilPrAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Perfil.fxml");
     }
 
     @FXML
-    private void onBotonAConfiguracionPrAction(ActionEvent event) throws IOException {
-        cambiarVista(event, "/vistas/Configuracion.fxml");
+    void onBotonAPrincipalPrAction(ActionEvent event) {
+        // Ya estamos en Principal, no se navega a ningún lado
+    }
+
+    @FXML
+    void onBotonDesarrolladoresAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Integrantes.fxml");
+    }
+
+    @FXML
+    void onBotonEnviaMensajeAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Mensajes.fxml");
+    }
+
+    @FXML
+    void onBotonFiltrosAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onBotonLikeAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onBotonNoupAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onBotonSuperLikeAction(ActionEvent event) {
+
     }
 
 }
