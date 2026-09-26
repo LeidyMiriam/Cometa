@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="700" minWidth="400" prefHeight="700" prefWidth="400" style="-fx-background-color: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.ConfiguracionController">
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 15; -fx-background-color: #1f0f14;">
+            <Label style="-fx-text-fill: #ff3366; -fx-font-size: 22px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="15" style="-fx-padding: 20;">
+            <VBox maxWidth="320" spacing="15" style="-fx-background-color: #1f0f14; -fx-padding: 25; -fx-background-radius: 15;">
+                <Label style="-fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-font-weight: bold;" text="Configuración General" />
+                <ComboBox fx:id="comboBoxIdioma" maxWidth="Infinity" promptText="Seleccionar Idioma" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-background-radius: 5;" />
+                <CheckBox style="-fx-text-fill: #fcd5ce;" text="Activar Notificaciones" />
+                <Button fx:id="botonConfiguracion" maxWidth="Infinity" onAction="#onBotonAConfiguracionPerfilAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Configuración de cuenta" />
+                <Button fx:id="botonSuscripcion" maxWidth="Infinity" onAction="#onBotonSuscripcionAction" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Suscripción" />
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 12; -fx-background-color: #1f0f14;">
+         <Button fx:id="botonAPrincipalMn" onAction="#onBotonAPrincipalCoAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Principal" />
+            <Button fx:id="botonALikesCo" onAction="#onBotonALikesCoAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Likes" />
+            <Button fx:id="botonAMensajesCo" onAction="#onBotonAMensajesCoAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Mensajes" />
+            <Button fx:id="botonAPerfilCo" onAction="#onBotonAPerfilCoAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Perfil" />
+            <Button fx:id="botonAConfiguracionCo" onAction="#onBotonAConfiguracionCoAction" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 8;" text="Configuración" />
+        </HBox>
+    </bottom>
+</BorderPane>
