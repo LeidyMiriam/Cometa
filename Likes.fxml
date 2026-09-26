@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="700" minWidth="400" prefHeight="700" prefWidth="400.0" style="-fx-background-color: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.LikesController">
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 15; -fx-background-color: #1f0f14;">
+            <Label style="-fx-text-fill: #ff3366; -fx-font-size: 22px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="15" style="-fx-padding: 20;">
+            <VBox maxWidth="360" prefHeight="530" spacing="15" style="-fx-background-color: #1f0f14; -fx-padding: 20; -fx-background-radius: 15;">
+                <Label style="-fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-font-weight: bold;" text="Likes e Interacciones" />
+                
+                <Button fx:id="botonDiLike" maxWidth="Infinity" onAction="#onBotonDiLike" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8;" text="Personas a las que le di Like" />
+                <ListView prefHeight="150" style="-fx-background-color: #2e161f; -fx-control-inner-background: #2e161f; -fx-background-radius: 8;" />
+
+                <Button fx:id="botonMeDieronLike" maxWidth="Infinity" onAction="#onBotonMeDieronLikeAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 12; -fx-background-radius: 8;" text="Personas que me dieron Like" />
+                <ListView prefHeight="150" style="-fx-background-color: #2e161f; -fx-control-inner-background: #2e161f; -fx-background-radius: 8;" />
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 12; -fx-background-color: #1f0f14;">
+         <Button fx:id="botonAPrincipalLi" onAction="#onBotonAPrincipalLiAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Principal" />
+            <Button fx:id="botonALikesLi" onAction="#onBotonALikesLiAction" style="-fx-background-color: #b82355; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 8;" text="Likes" />
+            <Button fx:id="botonAMensajesLi" onAction="#onBotonAMensajesLiAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Mensajes" />
+            <Button fx:id="botonAPerfilLi" onAction="#onBotonAPerfilLiAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Perfil" />
+            <Button fx:id="botonAConfiguracionLi" onAction="#onBotonAConfiguracionLiAction" style="-fx-background-color: #2e161f; -fx-text-fill: #fcd5ce; -fx-background-radius: 8;" text="Configuración" />
+        </HBox>
+    </bottom>
+</BorderPane>
