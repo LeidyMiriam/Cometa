@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class PrincipalController {
@@ -118,4 +119,20 @@ public class PrincipalController {
 
     }
 
+    @FXML
+    private void onLabelNombreAction(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/vistas/Perfil2.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage)
+                ((Node) event.getSource())
+                        .getScene()
+                        .getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
 }

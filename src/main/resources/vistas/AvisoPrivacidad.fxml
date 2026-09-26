@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" minHeight="700" minWidth="400.0" prefHeight="750" prefWidth="400.0" style="-fx-background-color: #12080a; -fx-background: #12080a;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaqueteLibrerias.AvisoPrivacidadController">
+    <VBox alignment="TOP_CENTER" spacing="20" style="-fx-padding: 25; -fx-background-color: #12080a;">
+        
+        <HBox alignment="CENTER" spacing="10">
+            <Label style="-fx-text-fill: #ff3366; -fx-font-size: 26px; -fx-font-weight: bold;" text="💫 Cometa 💫" />
+        </HBox>
+
+        <VBox maxWidth="380" spacing="16" style="-fx-background-color: #1f0f14; -fx-padding: 25; -fx-background-radius: 15;">
+         <Label style="-fx-text-fill: #ffffff; -fx-font-size: 26px; -fx-font-weight: bold;" text="Aviso de Privacidad" />
+         <TextArea editable="false" prefHeight="457.0" prefWidth="298.0" text="Aviso de Privacidad
+
+Última actualización: 25 de septiembre de 2026
+
+En Cometa nos preocupamos por la privacidad de nuestros usuarios. Este Aviso de Privacidad explica qué información recopilamos, cómo la utilizamos y cómo la protegemos.
+
+1. Información que recopilamos
+
+Al utilizar la aplicación podemos recopilar:
+
+• Nombre o nombre de usuario.
+• Edad y fecha de nacimiento.
+• Correo electrónico.
+• Fotografías que decidas subir.
+• Información de tu perfil.
+• Información relacionada con tus coincidencias y conversaciones.
+
+2. ¿Para qué utilizamos tu información?
+
+La información recopilada puede utilizarse para:
+
+• Crear y administrar tu cuenta.
+• Mostrar tu perfil a otros usuarios.
+• Permitir coincidencias y comunicación.
+• Mejorar la seguridad de la aplicación.
+• Detectar actividades fraudulentas o abusivas.
+
+3. Compartición de información
+
+No venderemos tus datos personales a terceros.
+
+Tu información podrá ser visible para otros usuarios cuando sea necesario para las funciones de la aplicación.
+
+4. Seguridad
+
+Implementamos medidas razonables para proteger la información de nuestros usuarios contra accesos no autorizados.
+
+5. Tus derechos
+
+Puedes solicitar información sobre los datos personales que tenemos de ti y, cuando corresponda, solicitar su corrección, actualización o eliminación.
+
+Correo electrónico: ejemplo@correo.com
+
+6. Cambios al Aviso de Privacidad
+
+Podemos actualizar este Aviso de Privacidad cuando sea necesario. Cualquier cambio será publicado dentro de la aplicación.
+
+7. Contacto
+
+Si tienes preguntas sobre este Aviso de Privacidad, puedes contactarnos en:
+
+Correo: ejemplo@correo.com" wrapText="true" />
+
+            <Button fx:id="botonGuardar" maxWidth="Infinity" onAction="#onBotonRegresarAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10; -fx-background-radius: 8;" text="Regresar al Registro">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </Button>
+
+        </VBox>
+    </VBox>
+</ScrollPane>
