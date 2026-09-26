@@ -69,4 +69,9 @@ public class MensajesController {
     public void onBotonAPrincipalMnAction(ActionEvent event) throws IOException {
         cambiarVista(event, "/vistas/Principal.fxml");
     }
+
+    @FXML
+    public void onBotonAPerfilAction(ActionEvent event) throws IOException {
+        cambiarVista(event, "/vistas/Perfil2.fxml");
+    }
 }

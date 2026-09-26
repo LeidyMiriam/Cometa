@@ -17,6 +17,7 @@
         <PasswordField fx:id="cuadroContrasena" promptText="contraseña" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" />
         <Label style="-fx-text-fill: #fcd5ce;" text="Confirmar Contraseña" />
         <PasswordField fx:id="cuadroContrasena2" promptText="contraseña" style="-fx-background-color: #2e161f; -fx-text-fill: #ffffff; -fx-prompt-text-fill: #8c6875; -fx-background-radius: 5;" />
+        <Label onMouseClicked="#onMouseAvisoPrivacidad"  style="-fx-text-fill: #fcd5ce;" text="Ver Aviso de Privacidad" />
         <CheckBox style="-fx-text-fill: #fcd5ce;" text="Acepto el aviso de privacidad" wrapText="true" />
         <Button fx:id="botonSiguiente" maxWidth="Infinity" onAction="#onBotonSiguienteAction" style="-fx-background-color: #ff3366; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-padding: 10; -fx-background-radius: 8;" text="Siguiente" />
     </VBox>
